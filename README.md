@@ -2,6 +2,14 @@
 
 A flexible and customizable React component for filtering content using interactive chips. Perfect for creating filter interfaces in e-commerce, dashboards, and data visualization applications.
 
+## Demo
+
+### Basic Usage
+![React Filter Chips Demo](https://github.com/divindvm/react-filter-chips/blob/main/chips.gif)
+
+### Image Gallery Filtering
+![Image Filter Demo](https://github.com/divindvm/react-filter-chips/blob/main/imagefilterdemo.gif)
+
 ## Features
 
 - **Flexible Filtering**: Filter data by single or multiple criteria
@@ -17,11 +25,11 @@ A flexible and customizable React component for filtering content using interact
 ## Installation
 
 ```bash
-npm install react-filter-chips
+npm install react-ui-chip-filter
 ```
 
 ```bash
-yarn add react-filter-chips
+yarn add react-ui-chip-filter
 ```
 
 ## Framework Support
@@ -40,33 +48,33 @@ This package supports multiple React setups:
 
 ### TypeScript/TSX
 ```tsx
-import { FilterChips, FilterChip } from 'react-filter-chips';
-import 'react-filter-chips/styles';
+import { FilterChips, FilterChip } from 'react-ui-chip-filter';
+import 'react-ui-chip-filter/styles';
 ```
 
 ### JavaScript/JSX
 ```jsx
-import { FilterChips } from 'react-filter-chips';
-import 'react-filter-chips/styles';
+import { FilterChips } from 'react-ui-chip-filter';
+import 'react-ui-chip-filter/styles';
 ```
 
 ### CommonJS (Node.js)
 ```javascript
-const { FilterChips } = require('react-filter-chips');
-require('react-filter-chips/dist/index.css');
+const { FilterChips } = require('react-ui-chip-filter');
+require('react-ui-chip-filter/dist/index.css');
 ```
 
 ### ES Modules (Browser)
 ```javascript
-import { FilterChips } from 'react-filter-chips/dist/index.esm.js';
-import 'react-filter-chips/dist/index.css';
+import { FilterChips } from 'react-ui-chip-filter/dist/index.esm.js';
+import 'react-ui-chip-filter/dist/index.css';
 ```
 
 ## Basic Usage
 
 ```tsx
 import React, { useState } from 'react';
-import { FilterChips, FilterChip } from 'react-filter-chips';
+import { FilterChips, FilterChip } from 'react-ui-chip-filter';
 
 const data = [
   { id: 1, name: 'John Doe', category: 'Developer', skills: ['React', 'TypeScript'] },
@@ -334,7 +342,7 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 ## Repository
 
 - **GitHub**: [https://github.com/divindvm/react-filter-chips](https://github.com/divindvm/react-filter-chips)
-- **NPM**: [https://www.npmjs.com/package/react-filter-chips](https://www.npmjs.com/package/react-filter-chips)
+- **NPM**: [https://www.npmjs.com/package/react-ui-chip-filter](https://www.npmjs.com/package/react-ui-chip-filter)
 
 ## Changelog
 
@@ -344,8 +352,8 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 ```jsx
 // App.js
 import React, { useState } from 'react';
-import { FilterChips } from 'react-filter-chips';
-import 'react-filter-chips/styles';
+import { FilterChips } from 'react-ui-chip-filter';
+import 'react-ui-chip-filter/styles';
 
 function App() {
   const [data, setData] = useState([
@@ -373,8 +381,8 @@ function App() {
 ```tsx
 // pages/index.tsx
 import { useState } from 'react';
-import { FilterChips, FilterChip } from 'react-filter-chips';
-import 'react-filter-chips/styles';
+import { FilterChips, FilterChip } from 'react-ui-chip-filter';
+import 'react-ui-chip-filter/styles';
 
 export default function HomePage() {
   const [data, setData] = useState([
@@ -400,8 +408,8 @@ export default function HomePage() {
 ```tsx
 // src/App.tsx
 import { useState } from 'react';
-import { FilterChips, FilterChip } from 'react-filter-chips';
-import 'react-filter-chips/styles';
+import { FilterChips, FilterChip } from 'react-ui-chip-filter';
+import 'react-ui-chip-filter/styles';
 
 function App() {
   const [data, setData] = useState([
