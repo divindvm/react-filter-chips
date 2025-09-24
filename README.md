@@ -2,8 +2,6 @@
 
 A flexible and customizable React component for filtering content using interactive chips. Perfect for creating filter interfaces in e-commerce, dashboards, and data visualization applications.
 
-Author: Divin Divakaran
-
 ## Demo
 
 ### Basic Usage
