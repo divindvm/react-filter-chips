@@ -1,0 +1,283 @@
+/* Filter Chips Container */
+.filter-chips-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Search Input */
+.filter-chips-search {
+  width: 100%;
+}
+
+.filter-chips-search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+.filter-chips-search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.filter-chips-search-input::placeholder {
+  color: #6c757d;
+}
+
+/* Chips Wrapper */
+.filter-chips-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Chips List */
+.filter-chips-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Individual Chip */
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid #e1e5e9;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  user-select: none;
+  white-space: nowrap;
+  min-height: 32px;
+  box-sizing: border-box;
+}
+
+.filter-chip:hover {
+  border-color: #007bff;
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-chip:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Active Chip */
+.filter-chip-active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+}
+
+.filter-chip-active:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Disabled Chip */
+.filter-chip-disabled {
+  background-color: #f8f9fa;
+  border-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.filter-chip-disabled:hover {
+  background-color: #f8f9fa;
+  border-color: #e9ecef;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Toggle Button */
+.filter-chips-toggle {
+  align-self: flex-start;
+  padding: 4px 8px;
+  border: none;
+  background: none;
+  color: #007bff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.filter-chips-toggle:hover {
+  color: #0056b3;
+}
+
+/* Clear All Button */
+.filter-chips-clear-all {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border: 1px solid #dc3545;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #dc3545;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-chips-clear-all:hover {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+/* No Results */
+.filter-chips-no-results {
+  padding: 16px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Loading State */
+.filter-chips-loading {
+  padding: 16px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-chips-list {
+    gap: 6px;
+  }
+  
+  .filter-chip {
+    padding: 4px 10px;
+    font-size: 13px;
+    min-height: 28px;
+  }
+  
+  .filter-chips-container {
+    gap: 8px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .filter-chips-container {
+    color: #ffffff;
+  }
+  
+  .filter-chips-search-input {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #ffffff;
+  }
+  
+  .filter-chips-search-input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+  }
+  
+  .filter-chips-search-input::placeholder {
+    color: #a0aec0;
+  }
+  
+  .filter-chip {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .filter-chip:hover {
+    border-color: #3182ce;
+    background-color: #4a5568;
+  }
+  
+  .filter-chip-active {
+    background-color: #3182ce;
+    border-color: #3182ce;
+    color: #ffffff;
+  }
+  
+  .filter-chip-active:hover {
+    background-color: #2c5282;
+    border-color: #2c5282;
+  }
+  
+  .filter-chip-disabled {
+    background-color: #1a202c;
+    border-color: #2d3748;
+    color: #718096;
+  }
+  
+  .filter-chips-no-results,
+  .filter-chips-loading {
+    color: #a0aec0;
+  }
+}
+
+/* Animation for chip selection */
+@keyframes chipSelect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.filter-chip-active {
+  animation: chipSelect 0.2s ease;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .filter-chip {
+    border-width: 2px;
+  }
+  
+  .filter-chip-active {
+    border-width: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .filter-chip,
+  .filter-chips-toggle,
+  .filter-chips-clear-all {
+    transition: none;
+  }
+  
+  .filter-chip:hover {
+    transform: none;
+  }
+  
+  .filter-chip-active {
+    animation: none;
+  }
+}
